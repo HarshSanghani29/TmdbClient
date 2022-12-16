@@ -20,7 +20,7 @@ class TvShowRepositoryImpl(
         val newListOfMovies = getTvShowsFromAPI()
         tvShowLocalDatasource.clearAll()
         tvShowLocalDatasource.saveTvShowsFromDB(newListOfMovies)
-        tvShowCacheDataSource.saveTvShowCache(newListOfMovies)
+//        tvShowCacheDataSource.saveTvShowCache(newListOfMovies)
         return getTvShowsFromAPI()
     }
 

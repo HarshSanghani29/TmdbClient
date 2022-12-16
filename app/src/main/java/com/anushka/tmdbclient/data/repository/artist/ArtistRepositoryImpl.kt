@@ -20,7 +20,7 @@ class ArtistRepositoryImpl(
         val newListOfArtists = getArtistsFromAPI()
         artistLocalDatasource.clearAll()
         artistLocalDatasource.saveArtistsToDB(newListOfArtists)
-        artistCacheDataSource.saveArtistCache(newListOfArtists)
+//        artistCacheDataSource.saveArtistCache(newListOfArtists)
         return getArtistsFromAPI()
     }
 
